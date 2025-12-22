@@ -98,6 +98,6 @@ button {
 
 button:hover {
     background: #cd9aff;
-    color: rgb(181, 255, 255);
+    color: #beff1b;
     transition: 1s;
 }

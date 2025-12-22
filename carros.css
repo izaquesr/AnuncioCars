@@ -78,7 +78,7 @@ section {
 }
 
 .card {
-    background-color: #250036;
+    background-color: #5a5a5a;
     width: 400px;
     border-radius: 12px;
     overflow: hidden;
@@ -92,15 +92,15 @@ section {
     &:hover {
         transform: scale(1.05);
         box-shadow:
-            0 0 15px rgba(83, 0, 116, 0.6),
+            0 0 15px rgba(146, 0, 204, 0.6),
             0 0 30px rgba(160, 0, 223, 0.4);
     }
 
     & .card-title {
-        background: linear-gradient( rgb(77, 19, 136) 0%, rgba(124, 65, 179, 1) 100%);
+        background-color: #9e9e9e;
         color: black;
         text-align: left;
-        padding: 12px;              
+        padding: 12px;
         font-weight: bold;
     }
 
@@ -121,7 +121,7 @@ section {
         text-align: center;
         padding: 10px;
         font-size: 14px;
-        background: #000000b4;
+        background: #c5c5c5;
 
         & p {
             color: #9e9e9e;
