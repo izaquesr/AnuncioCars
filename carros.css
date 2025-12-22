@@ -12,9 +12,13 @@ body {
 }
 
 body {
-    background-image: radial-gradient(#7c41b3, #1c0038);
+    background: radial-gradient(circle, rgba(124, 65, 179, 1) 0%, rgba(28, 0, 56, 1) 100%);
     color: #fff;
     font-size: 16px;
+}
+
+header, nav, a {
+    color: #fff;
 }
 
 header {
@@ -39,7 +43,6 @@ header {
 
             & .Carros {
                 color: #beff1b;
-
 
             }
 
@@ -75,7 +78,7 @@ section {
 }
 
 .card {
-    background-color: #5a5a5a;
+    background-color: #250036;
     width: 400px;
     border-radius: 12px;
     overflow: hidden;
@@ -89,15 +92,15 @@ section {
     &:hover {
         transform: scale(1.05);
         box-shadow:
-            0 0 15px rgba(183, 0, 255, 0.6),
+            0 0 15px rgba(83, 0, 116, 0.6),
             0 0 30px rgba(160, 0, 223, 0.4);
     }
 
     & .card-title {
-        background-color: #9e9e9e;
+        background: linear-gradient( rgb(77, 19, 136) 0%, rgba(124, 65, 179, 1) 100%);
         color: black;
         text-align: left;
-        padding: 12px;
+        padding: 12px;              
         font-weight: bold;
     }
 
@@ -118,7 +121,7 @@ section {
         text-align: center;
         padding: 10px;
         font-size: 14px;
-        background: #c5c5c5;
+        background: #000000b4;
 
         & p {
             color: #9e9e9e;

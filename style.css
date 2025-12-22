@@ -12,9 +12,14 @@ body {
 }
 
 body {
-    background-image: radial-gradient(#7c41b3, #1c0038);
+    background: radial-gradient(circle, rgba(124, 65, 179, 1) 0%, rgba(28, 0, 56, 1) 100%);
     color: #fff;
     font-size: 16px;
+    
+}
+
+header, nav, a {
+    color: #fff;
 }
 
 header {
@@ -35,8 +40,10 @@ header {
         & ul {
             display: grid;
             grid-template-columns: repeat(3, 200px);
+            
 
             & li {
+                
                 & a {
                     text-decoration: none;
                 }

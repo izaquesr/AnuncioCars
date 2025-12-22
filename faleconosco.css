@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background: radial-gradient(circle,rgba(124, 65, 179, 1) 0%, rgba(28, 0, 56, 1) 100%);
+    font-size: 16px;
+}
+
+header, nav, a {
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    gap: 10%;
+    z-index: 2;
+
+    & img {
+        width: 250px;
+    }
+
+    & nav {
+        & ul {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+
+            & li {
+                & a {
+                    text-decoration: none;
+                }
+
+                & .faleconosco {
+                    color: #beff1b;
+
+
+                }
+            }
+        }
+    }
+}
+
+.formulario {
+    width: 40%;
+    min-width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+    padding: 20px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+input,
+textarea,
+button {
+    min-width: 320px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #868686;
+    margin-top: 20px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+textarea {
+    height: 200px;
+    padding-top: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background: #9c39ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #cd9aff;
+    color: rgb(181, 255, 255);
+    transition: 1s;
+}
