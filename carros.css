@@ -81,8 +81,7 @@ section {
 
 .card {
     background-color: #5a5a5a;
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
     border-radius: 12px;
     overflow: hidden;
     display: flex;
