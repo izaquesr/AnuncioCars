@@ -303,18 +303,18 @@ section {
 
     header {
         grid-template-columns: 1fr;
-        gap: 20px;
         text-align: center;
+        gap: 10px;
+    }
 
-        & img {
-            width: 180px;
-            margin: 0 auto;
-        }
+    header img {
+        width: 160px;
+        margin: 0 auto;
+    }
 
-        & nav ul {
-            grid-template-columns: 1fr;
-            gap: 10px;
-        }
+    header nav ul {
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 14px;
     }
 
     section .list {
@@ -324,86 +324,50 @@ section {
     section .list .item {
 
         & .car-img {
-            position: relative;
-            top: auto;
-            transform: none;
-            width: 90%;
-            margin: 120px auto 0;
+            width: 100%;
+            position: absolute;
+            top: 35%;
+            transform: translateY(-50%);
+        }
 
-            & img {
-                transform: rotate(0);
-            }
-
-            &::before {
-                display: none;
-            }
+        & .car-img img {
+            transform: rotate(-15deg);
         }
 
         & .content {
-            position: relative;
+            position: absolute;
+            bottom: 40px;
             right: 0;
             width: 100%;
+            padding: 0 20px;
             align-items: center;
             text-align: center;
-            padding: 20px;
+            background: linear-gradient(
+                to top,
+                rgba(0,0,0,0.6),
+                transparent
+            );
+        }
 
-            & h2 {
-                font-size: 3.5em;
-            }
+        & .content h2 {
+            font-size: 3.8em;
+        }
 
-            & .description {
-                text-align: center;
-                font-size: 14px;
-                max-width: 100%;
-            }
+        & .description {
+            max-width: 100%;
+            font-size: 14px;
         }
     }
 
     .arrows {
         width: 90vw;
         top: auto;
-        bottom: 40px;
+        bottom: 140px;
     }
 
     .indicators {
         top: auto;
-        bottom: 100px;
+        bottom: 80px;
         align-items: center;
-
-        & .number {
-            font-size: 3em;
-        }
-    }
-}
-
-
-@media (max-width: 1024px) {
-
-    header {
-        grid-template-columns: 1fr 1fr;
-
-        & nav ul {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
-    section .list {
-        width: 90vw;
-    }
-
-    section .list .item {
-
-        & .car-img {
-            width: 60%;
-        }
-
-        & .content {
-            width: 60%;
-            right: 40px;
-
-            & h2 {
-                font-size: 5em;
-            }
-        }
     }
 }

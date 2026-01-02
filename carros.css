@@ -137,67 +137,71 @@ section {
 
     header {
         grid-template-columns: 1fr;
-        gap: 16px;
         text-align: center;
-        padding-top: 10px;
+        gap: 10px;
     }
 
     header img {
-        width: 180px;
+        width: 160px;
         margin: 0 auto;
     }
 
     header nav ul {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-
-    header nav ul li {
-        text-align: center;
-    }
-
-    header nav ul .Carros {
-        color: #beff1b;
-        font-weight: bold;
-    }
-
-    .cards-section {
-        padding-top: 140px;
-        /* evita header fixo */
-    }
-
-    .cards-container {
-        padding: 0 20px;
-        gap: 24px;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 340px;
-    }
-
-    .card-image img {
-        height: 180px;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    header {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
-
-    header nav ul {
         grid-template-columns: repeat(3, 1fr);
+        font-size: 14px;
     }
 
-    .cards-container {
-        padding: 0 40px;
-        gap: 32px;
+    section .list {
+        width: 100vw;
     }
 
-    .card {
-        max-width: 380px;
+    section .list .item {
+
+        & .car-img {
+            width: 100%;
+            position: absolute;
+            top: 35%;
+            transform: translateY(-50%);
+        }
+
+        & .car-img img {
+            transform: rotate(-15deg);
+        }
+
+        & .content {
+            position: absolute;
+            bottom: 40px;
+            right: 0;
+            width: 100%;
+            padding: 0 20px;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(
+                to top,
+                rgba(0,0,0,0.6),
+                transparent
+            );
+        }
+
+        & .content h2 {
+            font-size: 3.8em;
+        }
+
+        & .description {
+            max-width: 100%;
+            font-size: 14px;
+        }
+    }
+
+    .arrows {
+        width: 90vw;
+        top: auto;
+        bottom: 140px;
+    }
+
+    .indicators {
+        top: auto;
+        bottom: 80px;
+        align-items: center;
     }
 }
