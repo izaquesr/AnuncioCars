@@ -8,6 +8,7 @@
 
 html,
 body {
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -297,4 +298,77 @@ section {
             }
         }
     }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    header img {
+        margin: 0 auto;
+        width: 180px;
+    }
+
+    header nav ul {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+
+    section {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 60px;
+    }
+
+    section .list {
+        width: 90vw;
+    }
+
+    section .content {
+        position: static;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    section .content h2 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    section .description {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    section .car-img {
+        position: relative;
+        width: 100%;
+        top: auto;
+        transform: none;
+        margin-top: 40px;
+    }
+
+    section .car-img img {
+        transform: rotate(-10deg);
+    }
+
+    .arrows {
+        width: 90vw;
+        bottom: 20px;
+        top: auto;
+    }
+
+    .indicators {
+        width: 90vw;
+        bottom: 20px;
+        top: auto;
+    }
+
 }
