@@ -15,10 +15,12 @@ body {
     background: radial-gradient(circle, rgba(124, 65, 179, 1) 0%, rgba(28, 0, 56, 1) 100%);
     color: #fff;
     font-size: 16px;
-    
+
 }
 
-header, nav, a {
+header,
+nav,
+a {
     color: #fff;
 }
 
@@ -40,10 +42,10 @@ header {
         & ul {
             display: grid;
             grid-template-columns: repeat(3, 200px);
-            
+
 
             & li {
-                
+
                 & a {
                     text-decoration: none;
                 }
@@ -292,6 +294,115 @@ section {
                     transition-delay: 0.3s;
                     opacity: 1;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+
+        & img {
+            width: 180px;
+            margin: 0 auto;
+        }
+
+        & nav ul {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+    }
+
+    section .list {
+        width: 100vw;
+    }
+
+    section .list .item {
+
+        & .car-img {
+            position: relative;
+            top: auto;
+            transform: none;
+            width: 90%;
+            margin: 120px auto 0;
+
+            & img {
+                transform: rotate(0);
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+        & .content {
+            position: relative;
+            right: 0;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+
+            & h2 {
+                font-size: 3.5em;
+            }
+
+            & .description {
+                text-align: center;
+                font-size: 14px;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .arrows {
+        width: 90vw;
+        top: auto;
+        bottom: 40px;
+    }
+
+    .indicators {
+        top: auto;
+        bottom: 100px;
+        align-items: center;
+
+        & .number {
+            font-size: 3em;
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    header {
+        grid-template-columns: 1fr 1fr;
+
+        & nav ul {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    section .list {
+        width: 90vw;
+    }
+
+    section .list .item {
+
+        & .car-img {
+            width: 60%;
+        }
+
+        & .content {
+            width: 60%;
+            right: 40px;
+
+            & h2 {
+                font-size: 5em;
             }
         }
     }

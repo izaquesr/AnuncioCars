@@ -17,7 +17,9 @@ body {
     font-size: 16px;
 }
 
-header, nav, a {
+header,
+nav,
+a {
     color: #fff;
 }
 
@@ -79,7 +81,8 @@ section {
 
 .card {
     background-color: #5a5a5a;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 12px;
     overflow: hidden;
     display: flex;
@@ -128,4 +131,73 @@ section {
         }
     }
 
+}
+
+@media (max-width: 768px) {
+
+    header {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    header img {
+        width: 180px;
+        margin: 0 auto;
+    }
+
+    header nav ul {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    header nav ul li {
+        text-align: center;
+    }
+
+    header nav ul .Carros {
+        color: #beff1b;
+        font-weight: bold;
+    }
+
+    .cards-section {
+        padding-top: 140px;
+        /* evita header fixo */
+    }
+
+    .cards-container {
+        padding: 0 20px;
+        gap: 24px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .card-image img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    header nav ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards-container {
+        padding: 0 40px;
+        gap: 32px;
+    }
+
+    .card {
+        max-width: 380px;
+    }
 }
